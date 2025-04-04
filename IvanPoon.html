@@ -1,31 +1,17 @@
+
 <!DOCTYPE html>
 <html>
     <head>
         <title>
             Ivan Poon's first HTML Page
         </title>
-        <style>
-            body{
-                background-color: rgba(0, 0, 0, 0.705);
-                color: whitesmoke;
-            }
-            h1{
-                color:wheat;
-                font-size: larger;
-                text-align: center;
-            }
-            h2{
-                color:wheat;
-                font-size: large;
-                text-align: center;
-            }
-            .center {
-                display: block;
-                margin-left: auto;
-                margin-right: auto;
-
-}
-        </style>
+        <link rel ="stylesheet" 
+        type="text/css" 
+        href="style.css"> <!-- Link to an external CSS file for styling -->
+  <!-- The title of the webpage that appears in the browser tab -->
+  <!-- This title is displayed in the browser's title bar or tab. 
+       It is important for SEO and accessibility, as it gives a quick 
+       overview of the page content. -->
     </head>
 
     <div class="container wrapper">
@@ -34,21 +20,26 @@
         </div>
         <div id="main">
             <div class="main-image">
-                <img src="selfPortrait.png" class="center">
+                <img src="portrait.png" class="center" id="myImage">
             </div>
             <div class="text block", id="paragraphs">
+                <h2>About Me</h2>
+                <p>
+                    I am currently a student at Univerity of Wisconsin-Madison.
+                    I am a double major in Computer Science and Data Science.
+                    I am proficient in Java and Python
+                    and have some experience with HTML, CSS, and JavaScript.
+                    I am currently learning about React and Node.js.
+                    I am also familiar with SQL and R.
+                    I am also interested in data science and machine learning.
+                    I am familiar with different machine learning algorithms and have experience with
+                    data visualization tools such as Tableau and Matplotlib.
+                </p>
+
                 <h2>Here are a list of projects I have worked on: </h2>
                 <p>
                 My first project was Hangman in which I simply used Java's object oriented programming and print statements 
                 </p>
-                <p>
-                Then through some classes I took in college and some of my own searching I created a more data science project 
-                about the NBA. Specifically, I used scraped data off of NBA Reference (a collection of NBA stats over the years) to 
-                predict the way the teams would perform in the Playoffs.
-                Moreover using data from previous years to train my model, I correctly predicted this year's NBA Champions. However, I wasn't able
-                to predict some of the previous year's champions. I wasn't sure the issue was the model itself or the stats. There is 
-                also an element of randomness to consider with injuries.  
-                </p>    
                 <p>
                 Then a few other games over this summer I figured I try getting more comefortable with Python becuase it was more simple 
                 which made the coding interviews easier since there is less syntax that I would need to do. So I created tic-tac-toe.</p> 
@@ -56,7 +47,16 @@
                 I also created the game Space Invaders using JavaFX. Through this project I learned a rudimentary way of creating a UI and
                 actually using image files and placing them onto the games
                 </p>
-                
+                <p>
+                    Then through some classes I took in college and some of my own searching I created a more data science project 
+                    about the NBA. Specifically, I used scraped data off of NBA Reference (a collection of NBA stats over the years) to 
+                    predict the way the teams would perform in the Playoffs.Moreover, using data from previous years to train many different models, to predict the NBA Champions. I used 
+                    machine learning techniques such as linear regression, decision trees, and neural networks. 
+                    I also evaluated the models using metrics like accuracy and mean squared error to determine the best-performing model.
+                    </p>
+                 </p>    
+                <button id ="addParagraphBtn" class="mybtn">Click Me for More Info</button>
+                <script src = "logic.js"> </script>
             </div>
         </div>
     </div>
